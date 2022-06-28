@@ -1,0 +1,48 @@
+:host {
+  width: 100%;
+  position: relative;
+
+  .slider-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items:  center;
+    border-radius: 3px;
+
+    &.slider-with-background {
+      background: #fdfdfd;
+    }
+  }
+
+  ::ng-deep .mat-raised-button.slider-arrow  {
+    max-width: 40px;
+    min-width: 40px;
+    padding: 10px;
+    min-height: 100px;
+    z-index: 1;
+    background: none;
+    box-shadow: none;
+
+    &-right {
+      right: 0;
+    }
+
+    &-absolute {
+      position: absolute;
+    }
+  }
+
+  .slides {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+    scrollbar-color: transparent transparent;
+    margin-bottom: -15px;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+  }
+}

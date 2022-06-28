@@ -1,0 +1,31 @@
+:host {
+  color: var(--theme-primary-contrast-500, rgba(255,255,255,0.8));
+
+  .footer {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+
+    &-title {
+      font-size: 20px;
+      margin: 0 0 5px;
+      font-weight: 500;
+    }
+
+    &-subtitle {
+      font-size: 14px;
+    }
+
+    &-copyright {
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    }
+
+    a {
+      color: var(--theme-primary-contrast-500, rgba(255,255,255,0.8));
+    }
+
+    &-links {
+      text-decoration: none;
+      list-style-type: none;
+      padding: 0;
+    }
+  }
+}

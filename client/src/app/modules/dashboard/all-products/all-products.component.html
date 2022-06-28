@@ -1,0 +1,14 @@
+<button
+  (click)="getAllProducts.emit()"
+  mat-raised-button
+  color="primary">
+  {{ 'Refresh' | translate | async }}
+</button>
+<app-products-list
+  *ngIf="allProducts"
+  [products]="allProducts"
+  [lang]="lang"
+  [showEdit]="true"
+  [currency]="currency"
+  (editProduct)="editProduct.emit($event)">
+</app-products-list>
